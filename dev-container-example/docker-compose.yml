@@ -1,0 +1,12 @@
+version: "3"
+services:
+  iac-dev-container:
+    container_name: IaCDevContainer
+    image: iac-dev-container:latest
+    volumes:
+      - "iac-dev-container-data:/var/iac-dev-container-data"
+      - "../..:/workspace"
+volumes:
+  iac-dev-container-data:
+    external: false
+
