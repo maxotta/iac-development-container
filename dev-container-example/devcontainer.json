@@ -1,0 +1,20 @@
+{
+  "name": "IaC Development Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "iac-dev-container",
+  "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
+  "postStartCommand": "bash /etc/init-iac-dev.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+          "ms-azuretools.vscode-docker",
+          "esbenp.prettier-vscode",
+          "mohsen1.prettify-json",
+          "ms-python.vscode-pylance",
+          "ms-python.python",
+          "HashiCorp.terraform",
+          "redhat.ansible"]
+    }
+  }
+}
+
