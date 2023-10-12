@@ -33,12 +33,11 @@ RUN set -uex; \
     apt-get install nodejs -y;
 
 # Install Terrafrom CDK
-RUN npm install --global @cdktf/cli-core@latest cdktf-cli@latest
-# @cdktf/node-pty-prebuilt-multiarch
+RUN npm install --global cdktf-cli@latest
 
 # Install Python toolset, Ansible and Docker libraries
-RUN apt-get -y install git python3 python3-pip pipenv ; \
-    pip install ansible docker
+RUN apt-get -y install git python3 python3-pip pipenv
+RUN pip install ansible docker
 
 COPY init-iac-dev.sh /etc
 
