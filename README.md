@@ -1,8 +1,9 @@
 # IaC Development Container
-IaC development environment containerized with Docker. It contains the flowoing tools and features:
+IaC development environment containerized with Docker. It contains the folowing tools and features:
 - [Terraform](https://www.terraform.io/)
 - [Terraform CDK (TypeScript)](https://developer.hashicorp.com/terraform/tutorials/cdktf)
 - [Ansible](https://www.ansible.com/)
+- [OpenNebula CLI](https://docs.opennebula.io/6.4/management_and_operations/references/cli.html)
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
