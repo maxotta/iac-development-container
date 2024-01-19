@@ -1,6 +1,9 @@
 version: "3"
 services:
   iac-dev-container:
+    build:
+      context: ../
+      dockerfile: Dockerfile
     container_name: IaCDevContainer
     image: iac-dev-container:latest
     volumes:
