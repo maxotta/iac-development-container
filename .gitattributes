@@ -1,0 +1,3 @@
+# enforce LF line ends since we use this inside
+# linux containers
+init-iac-dev.sh text eol=lf
