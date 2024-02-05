@@ -48,7 +48,7 @@ RUN pip install docker
 COPY init-iac-dev.sh /etc
 
 RUN echo '. /etc/init-iac-dev.sh' >> /root/.bashrc ; \
-    echo 'export TF_VAR_vm_ssh_pubkey="`cat /${PERSISTENT_DATA_DIR}/id_ecdsa.pub`"' >> /root/.bashrc
+    echo 'export TF_VAR_vm_ssh_pubkey="`cat ${PERSISTENT_DATA_DIR}/id_ecdsa.pub`"' >> /root/.bashrc
 
 WORKDIR ${WORKSPACE_DIR}
 
