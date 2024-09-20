@@ -14,13 +14,6 @@ RUN set -uex; \
     apt-get -y install gnupg software-properties-common ca-certificates curl apt-transport-https ; \
     mkdir -p /etc/apt/keyrings
 
-# Add OpenNebula CLI Tools
-RUN set -uex; \
-    curl -fsSL https://downloads.opennebula.io/repo/repo2.key | apt-key add - ; \
-    echo "deb https://downloads.opennebula.io/repo/6.4/Ubuntu/20.04 stable opennebula" > /etc/apt/sources.list.d/opennebula.list ; \
-    apt-get update ; \
-    apt-get -y install opennebula-tools
-
 # Add HashiCorp repos and install Terraform
 RUN set -uex; \
     curl -fsSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /usr/share/keyrings/hashicorp-archive-keyring.gpg ; \
