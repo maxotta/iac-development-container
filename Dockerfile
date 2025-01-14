@@ -37,6 +37,8 @@ RUN npm install --global cdktf-cli@latest
 RUN apt-get -y install git python3 python3-pip pipenv
 RUN pip install ansible
 RUN pip install docker
+# Install Ansible collections
+RUN ansible-galaxy collection install community.docker
 
 COPY init-iac-dev.sh /etc
 
