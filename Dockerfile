@@ -38,7 +38,7 @@ RUN set -uex; \
 RUN npm install --global cdktf-cli@latest
 
 # Install Python toolset, Ansible and Docker libraries
-RUN apt-get -y install git python3 python3-pip pipenv
+RUN apt-get -y install git python3 python3-pip pipenv python3-venv
 RUN apt-get -y install ansible
 RUN apt-get -y install python3-docker
 
