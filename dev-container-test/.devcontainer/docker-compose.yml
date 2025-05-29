@@ -1,0 +1,15 @@
+version: "3"
+services:
+  iac-dev-container:
+    container_name: IaCDevContainer_test
+    build:
+      context: ../..
+      dockerfile: Dockerfile
+    volumes:
+      - "iac-dev-container-data:/var/iac-dev-container-data"
+      - "../..:/workspace"
+
+volumes:
+  iac-dev-container-data:
+    external: false
+
