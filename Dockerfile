@@ -35,7 +35,7 @@ RUN set -uex; \
     apt-get install nodejs -y;
 
 # Install Terrafrom CDK
-RUN npm install --global cdktf-cli@latest
+#RUN npm install --global cdktf-cli@latest
 
 # Install Python toolset, Ansible and Docker libraries
 RUN apt-get -y install git python3 python3-pip pipenv python3-venv
